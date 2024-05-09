@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{%block css%}  {%endblock css%}
+    
+{% block title %} Contato {% endblock title %}
+
+{%block conteudo%}
+
+<!-- Paragrafo -->
+<div id="divparagrafo">
+
+    <h1 class="titulo">Entre em Contato</h1>
+    <p class="paragrafo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, sit! Beatae officiis fuga cumque
+    </p>
+
+    <br>
+    <hr>
+    <br>
+
+    <form action="" id="form">
+
+        <label for="fname">Nome</label> <br>
+        <input type="text" id="fname" name="fname" ><br>
+
+        <br>
+
+        <label for="fsobrenome">Sobrenome</label><br>
+        <input type="text" name="fsobrenome" id="fsobrenome"><br>
+
+        <br>
+
+        <label for="fdescricao">Descrição</label><br>
+        <input type="fdescricao" name="fdescricao" id="fdescricao"><br>
+
+        <br>
+        
+        <div id="liveAlertPlaceholder">
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+            <br>
+        </div>
+    </form>
+
+
+    <script src="../static/js/snippets.js"> </script>
+</div>
+
+{%endblock conteudo%}
