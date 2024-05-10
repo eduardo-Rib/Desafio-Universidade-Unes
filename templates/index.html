@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{%block css%}  {%endblock css%}
+{%block css%} <link rel="stylesheet" href="../static/css/style_index.css"> {%endblock css%}
     
 {% block title %} Página principal {% endblock title %}
 
@@ -57,23 +57,24 @@
 
     <div class="container">
       
-      <div class="elemento">
+      <div class="elemento" onclick="window.location.href='/campus1'">
         <img class="" src="/static/imagens/unidade1.svg" alt="unidade1">
+        <h3>Campus Central - Avenida Paulista</h3>  
       </div>
 
-      <div class="elemento">
+      <div class="elemento" onclick="window.location.href='/campus2'">
         <img class="" src="/static/imagens/unidade2.svg" alt="unidade2">
+        <h3>Campus Zona Norte - Santana</h3>
       </div>
       
-      <div class="elemento">
+      <div class="elemento" onclick="window.location.href='/campus3'">
         <img class="" src="/static/imagens/unidade3.svg" alt="unidade3">
+        <h3>Campus Zona Sul - Morumbi</h3>
       </div>
           
     </div>
       
-      <h3>Campus Central - Avenida Paulista</h3>  
-      <h3>Campus Zona Norte - Santana</h3>
-      <h3>Campus Zona Sul - Morumbi</h3>
+      
     
     <h1 class="titulo">Motivos para ser um estudante UNES</h1>
   
