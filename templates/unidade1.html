@@ -1,13 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <div> <p> preferências </p> </div>
+{% extends 'base_unidades.html' %}
+{%block css%}  {%endblock css%}
     
-</body>
-</html>
+{% block title %} Página principal {% endblock title %}
+
+{%block conteudo%}
+
+    <div class="principal">
+        <h1 class="titulo">  </h1>
+
+        <div class="img">
+            <img src="/static/imagens/unidade1.svg" alt="">
+        </div>
+
+        <p class="paragrafo"> O Campus Central da UNES, localizado na prestigiosa Avenida Paulista, é o epicentro da excelência acadêmica e da inovação. Fundado juntamente com a universidade em 1960, este campus histórico é conhecido por sua arquitetura impressionante e sua atmosfera vibrante. Oferecendo uma ampla gama de cursos em diversas áreas do conhecimento, o Campus Central é frequentado por estudantes apaixonados por negócios, comunicação, artes e ciências sociais. </p>
+
+        <p class="paragrafo"> Alguns dos cursos oferecidos no Campus Central incluem: </p>
+
+        <ul>
+            <li> Administração de Empresas </li>
+
+            <li> Comunicação Social </li>
+
+            <li> Direito </li>
+
+            <li> Psicologia </li>
+
+            <li> Artes Visuais </li>
+        </ul>
+
+    </div>
+
+
+
+{%endblock conteudo%}
