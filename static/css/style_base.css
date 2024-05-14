@@ -1,27 +1,22 @@
 .principal{
-    padding: 2rem;
-    /* background-color: transparent; */
-}
-
-main{
     margin: auto;
     background-color: white;
     width: 70%;
     padding-top: 5%;
     padding-bottom: 5%;
-    max-width: 1920px;
+    max-width: 1344px;
 }
 
-body{
-    background-color: aquamarine;
+.content{
+    padding: 2rem; 
 }
 
-.titulo{
-    color: black; 
+.principal h1{
+    color: black;
     font-size: 2rem;
 }
 
-.paragrafo{
+.principal p{
     text-align: justify;
     font-size: 1rem;
 }
@@ -37,31 +32,25 @@ body{
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
     .principal{
-        padding: 0rem;
-        /* background-color: transparent; */
-    }
-    
-    main{
         margin: auto;
         background-color: white;
-        width: 70%;
+        width: 90%;
         padding-top: 5%;
         padding-bottom: 5%;
-        min-width: 1920px;
     }
     
-    body{
-        background-color: aquamarine;
+    .content{
+        padding: 2rem; 
     }
     
-    .titulo{
-        color: black; 
+    .principal h1{
+        color: black;
         font-size: 2rem;
     }
     
-    .paragrafo{
+    .principal p{
         text-align: justify;
         font-size: 1rem;
     }
