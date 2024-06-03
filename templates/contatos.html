@@ -13,25 +13,25 @@
         Para tirar alguma duvida preencha o formilário abaixo:
     </p>
 
-    <form action="" id="form">
+    <form form action="/include" method="POST">
 
         <label for="fname">Nome (Completo)</label> <br>
-        <input type="text" id="fname" name="fname" ><br>
+        <input type="text" id="fnome" name="fnome" class="large-input" size="48" required><br>
 
         <br>
 
-        <label for="fsobrenome">Email</label><br>
-        <input type="text" name="fsobrenome" id="fsobrenome"><br>
+        <label for="femail">Email</label> <br>
+        <input type="text" name="femail" id="femail" class="large-input" size="48" required><br>
 
         <br>
-
-        <label for="fdescricao">Descrição</label><br>
-        <input type="fdescricao" name="fdescricao" id="fdescricao"><br>
+        
+        <label for="fdescricao">Descrição:</label> <br>
+        <textarea id="fdescricao" name="fdescricao" class="large-textarea" cols="50" rows="10" required></textarea>
 
         <br>
         
         <div id="liveAlertPlaceholder">
-            <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+            <button type="submit" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
             <br>
         </div>
     </form>

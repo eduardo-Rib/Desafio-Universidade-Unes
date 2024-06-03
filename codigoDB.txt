@@ -1,0 +1,10 @@
+create database dbUnes;
+
+use dbUnes;
+
+create table duvidas(
+id int primary key auto_increment not null,
+nome varchar(100) not null,
+email varchar(100) not null,
+descricao varchar(700) not null
+);
