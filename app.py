@@ -8,23 +8,23 @@ app = Flask(__name__)
 # Configuração do MySQL
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = 'eduardo'
+app.config['MYSQL_PASSWORD'] = 'fatec'
 app.config['MYSQL_DB'] = 'dbunes'
 mysql = MySQL(app)
 
 
 # Rota para adicionar uma nova duvida
-@app.route('/include', methods=['POST'])
+@app.route('/include', methods=['POST', 'GET'])
 def Include():
     if request.method == 'POST':
         nome = request.form['fnome']
         email = request.form['femail']
         descricao = request.form['fdescricao']
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO duvidas (nome, email, descricao) VALUES (%s, %s, %s)" (nome, email, descricao))
+        cur.execute(f"INSERT INTO duvidas (nome, email, descricao) VALUES (%s, %s, %s)", (nome, email, descricao))
         mysql.connection.commit()
         cur.close()
-        return redirect(url_for('index'))
+        return redirect(url_for('contatos'))
 
 
 
