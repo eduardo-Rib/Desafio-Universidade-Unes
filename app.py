@@ -26,6 +26,15 @@ def Include():
         cur.close()
         return redirect(url_for('contatos'))
 
+@app.route('/duvidas')
+def duvidas():
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM duvidas")
+    duvidas = cur.fetchall()
+    cur.close()
+    return render_template('duvidas.html', duvidas=duvidas)
+     
+
 
 
 #Rotas das paginas

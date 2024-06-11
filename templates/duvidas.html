@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{%block css%}  {%endblock css%}
+    
+{% block title %} Contato {% endblock title %}
+
+{%block conteudo%}
+
+<div class="principal">
+    {% for duvidas in duvidas %}
+        <div class="duvidas">
+            <h1> {{ duvidas[1] }} </h1>
+            <p> {{ duvidas[2] }} </p>
+            <p> {{ duvidas[3] }} </p>
+        </div>
+    {% endfor %}
+    
+</div>
+
+{%endblock conteudo%}

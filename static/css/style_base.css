@@ -32,6 +32,23 @@ body{
     text-align: center;
 }
 
+.duvidas{
+    background-color: rgb(245, 245, 245);
+    border-radius: 1rem;
+    padding-top: 1rem;
+}
+
+.duvidas p{
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.duvidas h1{
+    color: black;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+}
 
 @media screen and (max-width: 810px) {
     .principal{
